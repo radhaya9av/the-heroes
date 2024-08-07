@@ -1,3 +1,5 @@
+import "../styles/Comics.scss";
+
 function Comics({ data, onClick }) {
   return (
     <div className="comics">
