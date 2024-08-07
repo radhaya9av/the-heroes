@@ -7,10 +7,10 @@ function StarWarsHome() {
     <div className="page-container">
       <div className="content-wrap">
         <Navbar />
-        <div>
+        <div className = "logo-theheroes-container" >
           <img src={theheroesStarWarsLogo} className="logo-starwars" alt="The Heroes StarWars" />
         </div>
-        <div>
+        <div className = "text-white">
           <h1>Welcome to StarWars Universe</h1>
         </div>
       </div>

@@ -1,4 +1,4 @@
-.comics {
+.comics-container {
   max-width: 80vw;
   margin: 0 auto;
   display: grid;
@@ -9,7 +9,7 @@
   background-image: url(../assets/paper.jpg);
 }
 
-.comicCard {
+.comic-card {
   border: 2px solid rgb(161, 161, 161);
   background: rgba(255, 255, 255, 0.67);
   padding: 1em;
@@ -66,13 +66,13 @@
 }
 
 @media only screen and (max-width: 1200px) {
-  .comics {
+  .comics-container {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media only screen and (max-width: 800px) {
-  .comics {
+  .comics-container {
     grid-template-columns: repeat(1, 1fr);
   }
 }

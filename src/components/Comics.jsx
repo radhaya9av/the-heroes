@@ -2,7 +2,7 @@ import "../styles/Comics.scss";
 
 function Comics({ data, onClick }) {
   return (
-    <div className="comics">
+    <div className="comics-container">
       {data.map((dataItem) => {
         const detailsUrl = dataItem.urls.find(
           (element) => element["type"] === "detail"
@@ -11,7 +11,7 @@ function Comics({ data, onClick }) {
         return (
           <a
             key={dataItem.id}
-            className="comicCard"
+            className="comic-card"
             style={{
               background: `url(${dataItem.thumbnail.path}.${dataItem.thumbnail.extension}) no-repeat center`,
               backgroundSize: "cover",

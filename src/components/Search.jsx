@@ -73,15 +73,16 @@ function Search() {
 
   return (
     <>
-      <form className="search" onSubmit={handleSubmit}>
+      <form className="search-container" onSubmit={handleSubmit}>
         <input
           type="text"
+          className="custom-input"
           placeholder="enter character name"
           onChange={handleChange}
         />
         <div className="buttons">
-          <button type="submit">Get Character Data</button>
-          <button type="reset" className="reset" onClick={handleReset}>
+          <button type="submit" className="custom-button">Get Character Data</button>
+          <button type="reset" className="custom-button reset" onClick={handleReset}>
             Reset
           </button>
         </div>

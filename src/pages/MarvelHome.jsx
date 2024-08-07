@@ -1,17 +1,21 @@
 import Navbar from '@/components/Navbar';
 import theheroesMarvelLogo from '../assets/the-heroes-marvel.svg';
 import '../App.css';
+import Search from '../components/Search';
 
 function MarvelHome() {
   return (
     <div className="page-container">
       <div className="content-wrap">
         <Navbar />
-        <div>
+        <div className= "logo-theheroes-container logo-marvel " >
           <img src={theheroesMarvelLogo} className="logo-marvel" alt="The Heroes Marvel" />
         </div>
-        <div>
+        <div className = "text-white">
           <h1>Welcome to Marvel Universe</h1>
+        </div>
+        <div>
+          <Search />
         </div>
       </div>
       <footer className="footer py-4 flex justify-center pb-8">

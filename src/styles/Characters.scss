@@ -1,4 +1,4 @@
-.characters {
+.characters-container {
   max-width: 80vw;
   margin: 0 auto;
   display: grid;
@@ -9,7 +9,7 @@
   background-image: url(../assets/paper.jpg);
 }
 
-.characterCard {
+.character-card {
   border: 2px solid rgb(161, 161, 161);
   background: rgba(255, 255, 255, 0.67);
   padding: 1em;
@@ -61,7 +61,7 @@
 }
 
 @media only screen and (max-width: 800px) {
-  .characters {
+  .characters-container {
     grid-template-columns: repeat(1, 1fr);
   }
 }

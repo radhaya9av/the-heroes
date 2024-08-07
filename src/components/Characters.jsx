@@ -2,12 +2,12 @@ import "../styles/Characters.scss";
 
 function Characters({ data, onClick }) {
   return (
-    <div className="characters">
+    <div className="characters-container">
       {data.map((dataItem) => {
         return (
           <div
             key={dataItem.id}
-            className="characterCard"
+            className="character-card"
             style={{
               background: `url(${dataItem.thumbnail.path}.${dataItem.thumbnail.extension}) no-repeat center`,
               backgroundSize: "cover",
