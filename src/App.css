@@ -5,11 +5,33 @@
   text-align: center;
 }
 
-.logo-container {
+body {
+  background-image: url('/src/assets/background.png'); /* Update the path to your image */
+  background-size: cover; /* Ensures the image covers the entire body */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  min-height: 100vh; /* Ensures the body takes up the full viewport height */
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default padding */
+  font-family: Arial, sans-serif; /* Optional: Set a default font */
+}
+
+.main-layout {
+  min-height: 100vh;
+}
+
+.logo-theheroes-container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20rem;
 }
 
 .logo {
@@ -19,17 +41,18 @@
   transition: filter 300ms;
 }
 
-.logo-marvel {
+.logo-marvel,
+.logo-starwars
+{
   height: 15em;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
 }
 
-.logo:hover {
-  filter: drop-shadow(0 0 5em #d0d2ffaa);
-}
-
-.logo-marvel:hover {
+.logo:hover,
+.logo-marvel:hover,
+.logo-starwars:hover
+{
   filter: drop-shadow(0 0 5em #d0d2ffaa);
 }

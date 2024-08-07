@@ -7,7 +7,7 @@ function Navbar() {
   return (
     <>
       <div className="w-full py-4 flex items-center justify-between">
-        <div className="right text-black-100 font-bold">
+        <div className="right text-white -100 font-bold">
             <a href="/">
             <h1>The Heroes</h1>
             </a>

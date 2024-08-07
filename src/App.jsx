@@ -5,6 +5,7 @@ import MarvelHome from './pages/MarvelHome';
 import StarWarsHome from './pages/StarWarsHome';
 import theheroesLogo from '/the-heroes.svg'
 import theheroesMarvelLogo from './assets/the-heroes-marvel.svg'
+import theheroesStarWarsLogo from './assets/the-heroes-starwars.svg'
 
 function App() {
   return (
@@ -19,17 +20,17 @@ function MainLayout() {
   const isHomePage = location.pathname === "/";
 
   return (
-    <div className="mx-[1rem] lg:mx-[2rem] xl:mx-[6rem] 2xl:mx-[16rem] m-auto">
+    <div className="main-layout mx-[1rem] lg:mx-[2rem] xl:mx-[6rem] 2xl:mx-[16rem] m-auto">
       {isHomePage && <Navbar />}
       {isHomePage && (
-        <div className="logo-container logo">
+        <div className="logo-theheroes-container logo">
           <img src={theheroesLogo} className="logo" alt="The Heroes" />
         </div>
       )}
       {isHomePage && (
-        <div>
+        <div className="logo-container">
           <Link to="/starwars-home">
-            <h1>StarWars Home</h1>
+            <img src={theheroesStarWarsLogo} className="logo-starwars" alt="The Heroes StarWars" />
           </Link>
           <Link to="/marvel-home">
             <img src={theheroesMarvelLogo} className="logo-marvel" alt="The Heroes Marvel" />
