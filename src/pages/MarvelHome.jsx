@@ -1,5 +1,5 @@
 import Navbar from '@/components/Navbar'
-import '../Page.css'
+import theheroesMarvelLogo from '../assets/the-heroes-marvel.svg'
 
 function MarvelHome() {
   return (
@@ -8,8 +8,14 @@ function MarvelHome() {
         <Navbar />
       </div>
       <div>
-        <h1>Welcome to Marvel Home Page.</h1>
+        <img src={theheroesMarvelLogo} className="logo-marvel" alt="The Heroes Marvel" />
       </div>
+      <div >
+        <h1>Welcome to Marvel Universe</h1>
+      </div>
+      {/* <div>
+        <Search />
+      </div> */}
     </>
   )
 }

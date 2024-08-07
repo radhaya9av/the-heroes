@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import MarvelHome from './pages/MarvelHome';
 import StarWarsHome from './pages/StarWarsHome';
 import theheroesLogo from '/the-heroes.svg'
+import theheroesMarvelLogo from './assets/the-heroes-marvel.svg'
 
 function App() {
   return (
@@ -27,11 +28,11 @@ function MainLayout() {
       )}
       {isHomePage && (
         <div>
-          <Link to="/marvel-home">
-            <h1>Marvel Home</h1>
-          </Link>
           <Link to="/starwars-home">
             <h1>StarWars Home</h1>
+          </Link>
+          <Link to="/marvel-home">
+            <img src={theheroesMarvelLogo} className="logo-marvel" alt="The Heroes Marvel" />
           </Link>
         </div>
       )}

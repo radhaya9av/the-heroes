@@ -19,6 +19,17 @@
   transition: filter 300ms;
 }
 
+.logo-marvel {
+  height: 15em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
 .logo:hover {
+  filter: drop-shadow(0 0 5em #d0d2ffaa);
+}
+
+.logo-marvel:hover {
   filter: drop-shadow(0 0 5em #d0d2ffaa);
 }
