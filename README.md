@@ -32,7 +32,7 @@ To get started with the project, follow these steps:
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/nitinya9av/the-heroes.git
+    git clone https://github.com/radhaya9av/the-heroes.git
     cd the-heroes
     ```
 
