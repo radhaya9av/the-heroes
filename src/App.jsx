@@ -3,6 +3,7 @@ import './App.css';
 import Navbar from "./components/Navbar";
 import MarvelHome from './pages/MarvelHome';
 import StarWarsHome from './pages/StarWarsHome';
+import theheroesLogo from '/the-heroes.svg'
 
 function App() {
   return (
@@ -19,6 +20,11 @@ function MainLayout() {
   return (
     <div className="mx-[1rem] lg:mx-[2rem] xl:mx-[6rem] 2xl:mx-[16rem] m-auto">
       {isHomePage && <Navbar />}
+      {isHomePage && (
+        <div className="logo-container logo">
+          <img src={theheroesLogo} className="logo" alt="The Heroes" />
+        </div>
+      )}
       {isHomePage && (
         <div>
           <Link to="/marvel-home">
