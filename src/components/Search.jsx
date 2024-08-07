@@ -1,5 +1,6 @@
 import { useState } from "react";
 import md5 from "md5";
+import "../styles/Search.scss";
 import Characters from "./Characters";
 import Comics from "./Comics";
 
